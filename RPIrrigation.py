@@ -4,6 +4,15 @@
 #test run the hydro setup
 #check GPIO-Python-code-2.py - compare to what i have below
 
+#water discharge baffle required to prevent splash 
+
+#Integrate water level - and link in pump cut out
+#Itegrate moisture Measurement
+#integrate temp and humidity
+#Integrate light sensor
+#reporting and web interface through plotty or control mypi
+
+
 #Import the necessary libraries
 import RPi.GPIO as GPIO
 import time
