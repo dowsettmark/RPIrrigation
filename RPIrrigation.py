@@ -31,13 +31,14 @@
 import RPi.GPIO as GPIO
 import time
 GPIO.setmode(GPIO.BOARD)
+GPIO.setwarnings(False)
 
 #Setup pin 18 as an output
 GPIO.setmode(GPIO.BOARD)
 GPIO.setup(18, GPIO.OUT)
 
 #This function turns the valve on and off in 30 sec. intervals. 
-def valve_OnOff(Pin):
+#def valve_OnOff(Pin):
     while True:
         GPIO.output(18,True) #may need to change to GPIO.OUT?
         print("Pump should be on") 
@@ -47,6 +48,6 @@ def valve_OnOff(Pin):
         time.sleep(30)
 
 #might need to get rid of this line
-valve_OnOff(18)
+#valve_OnOff(18)
 
-GPIO.cleanup()
+#GPIO.cleanup()
