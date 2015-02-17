@@ -3,6 +3,7 @@
 #run as a cron job
 #test run the hydro setup
 #check GPIO-Python-code-2.py - compare to what i have below
+#continue running jobs after the server connection breaks
 
 #water discharge baffle required to prevent splash 
 
