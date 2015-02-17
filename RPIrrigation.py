@@ -12,6 +12,19 @@
 #Integrate light sensor
 #reporting and web interface through plotty or control mypi
 
+#import RPi.GPIO as gpio
+#import time
+
+#gpio.setmode(gpio.BCM)
+#gpio.setup(18, gpio.OUT)
+#while True:
+ # time.sleep(2)
+ # gpio.output(18, True)
+ # print "True"
+ #time.sleep(2)
+ # gpio.output(18, False)
+ # print "False"
+
 
 #Import the necessary libraries
 import RPi.GPIO as GPIO
@@ -32,6 +45,7 @@ def valve_OnOff(Pin):
         print("Pump should be OFF")
         time.sleep(30)
 
+#might need to get rid of this line
 valve_OnOff(18)
 
 GPIO.cleanup()
